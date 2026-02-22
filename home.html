@@ -36,17 +36,24 @@
     a{
         text-decoration: none;
     }
+    
+    .Img{
+        width:150px;
+        height:220px;
+        object-fit:cover;
+        margin:10px;
+    }
 
     </style>
     
     </head>
 
     
-    <header style="background-color: #FFCE99; border: #ffce99af;border-style:solid;border-radius: 25px; ">
+    <header style="background-image:url(Backgroundimg.png); border: #cf802c8e;border-style:solid;border-radius: 5px; ">
      
-        <a href="Login.html" style="float: right;border-color: #000000;border-style:double;" ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
-        <div style="text-align: center; font-size:45px; padding-left: 50px;color: rgba(243, 126, 17, 0.89);">
-        <p><B> Welcome To The Store</B></p>
+        <a href="Login.html" style="float: right;border-color: #000000;border-style:solid;background-color: ;" ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+        <div style="text-align: center; font-size:45px; color: rgba(243, 126, 17, 0.89);padding-top: 20px;">
+        <p style="background-color:#000000be;"><B> Welcome To The Store</B></p>
         </div>
         <hr style="border-color:black; border-width: 2px;">
         <div style="text-align: center;">
@@ -58,55 +65,56 @@
             <a href="Cart.html" >  <button class="HeadButton"> Cart </button> </a>  
             <a href="Profile.html" >  <button class="HeadButton"> MyProfile </button> </a> 
         </div>
+        <div style="text-align: center;margin-top: 20px;">
+            <input type="text" style="border-color: rgb(247, 228, 120); border-width: 4px; border-radius: 8px; width: 20%;height: 3%;;"> <button type="submit" style="height: 3%; border-radius: 10px;">Search</button></div>   
+
+        </div>
         
     </header>
     
-<body  style="background-color: #FFCE99;" >
-        <hr style="border-color:black; border-width: 2px;">  
-<input type="text" style="border-color: rgb(247, 228, 120); border-width: 4px; border-radius: 8px; width: 20%;height: 3%;"> <button type="submit" style="height: 3%; border-radius: 10px;">Search</button></div>   
-<div style="background-color: #000000;">
-       <table style="border-color: aqua;">
-            <h2>Recently Purchased</h2>
-            <tr>  
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            </tr>
-        </table>
+<body style="background-color:#FFCE99;">
+
+<hr style="border:2px solid black;">
+
+<div  style="background:rgba(0, 0, 0, 0.473); overflow-x:auto; white-space:nowrap;">
+    <h2 >Recently Purchased</h2>
+    <img class="Img" src="StoryBook.jpg">
+    <img class="Img" src="StoryBook2.jpg">
+    <img class="Img" src="IRL2.jpg">
+    <img class="Img" src="StoryBook6.jpeg">
+    <img class="Img" src="IRL3.jpg">
 </div>
-<hr style="border-color:black; border-width: 2px;">
-<div style="background-color: #000000;">
-         <table>
-             <h2 id="NewArrivals">New Arrivals</h2>
-            <tr>  
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            </tr>
-        </table>
+
+<hr style="border:2px solid black;">
+
+<div id="NewArrivals" style="background:rgba(0, 0, 0, 0.473); overflow-x:auto; white-space:nowrap;">
+    <h2 >New Arrivals</h2>
+    <img class="Img" src="IRL1.jpg">
+    <img class="Img" src="StoryBook3.jpg">
+    <img class="Img" src="StoryBook5.jpg">
 </div>
-<hr style="border-color:black; border-width: 2px;">
-<div style="background-color: #000000;">
-         <table>
-             <h2 id="jumphere1">Popular Ones</h2>
-            <tr>  
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            <td><img src="StoryBook.jpg" alt="the Work of a person"></td>
-            </tr>
-        </table>
+
+<hr style="border:2px solid black;">
+
+<div id="jumphere1" style="background:rgba(0, 0, 0, 0.473); overflow-x:auto; white-space:nowrap;">
+    <h2>Popular Ones</h2>
+    <img class="Img" src="StoryBook5.jpg">
+    <img class="Img" src="StoryBook.jpg"> 
+    <img class="Img" src="StoryBook2.jpg">
+    <img class="Img" src="StoryBook5.jpg">
+    <img class="Img" src="StoryBook.jpg"> 
+    <img class="Img" src="StoryBook2.jpg">
+    <img class="Img" src="StoryBook5.jpg">
+    <img class="Img" src="StoryBook.jpg"> 
+    <img class="Img" src="StoryBook2.jpg">
+    <img class="Img" src="StoryBook5.jpg">
+    <img class="Img" src="StoryBook.jpg"> 
+    <img class="Img" src="StoryBook2.jpg">
 </div>
-<hr style="border-color:black; border-width: 2px;">
-</body> 
+
+<hr style="border:2px solid black;">
+
+</body>
 
     <footer>
        <h3 style="text-align: center;">this is a simple bookstore</h3>

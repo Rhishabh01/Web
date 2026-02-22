@@ -1,0 +1,115 @@
+<html>
+    <head>
+    <title>Online Book Store</title>
+    
+    <style>
+    
+    .Header{
+        background-color:rgb(255, 253, 232);
+        
+       
+       
+    }
+    .Header1{
+        background-color:rgb(255, 253, 232);
+        border-color: antiquewhite ;
+        border-style: groove;   
+      
+    }
+    
+   h2{
+    color: #000000;
+    background-color: beige;
+    font-family: Courier, monospace;
+    text-indent: 10px;
+   }
+
+   .HeadButton{
+    background-color: #faf875;
+    font-size: 15px;
+    font-family: Courier, monospace;
+    border-radius: 5px;
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+    a{
+        text-decoration: none;
+    }
+    
+ td{
+    text-align: center;
+ }
+
+ th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px; 
+    padding-left: 50px;
+ }
+
+ td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+    </style>
+    
+    </head>
+
+    
+    <header style="background-image:url(Backgroundimg.png); border: #cf802c8e;border-style:solid;border-radius: 5px; ">
+     
+        <a href="Login.html" style="float: right;border-color: #000000;border-style:solid;background-color: beige;" ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+        <div style="text-align: center; font-size:45px; color: rgba(243, 126, 17, 0.89);padding-top: 20px;">
+        <p style="background-color:#000000be;"><B> Your Cart </B></p>
+        </div>
+        <hr style="border-color:black; border-width: 2px;">
+        <div style="text-align: center;">
+            <a href="home.html" >  <button class="HeadButton"> Home </button> </a> 
+            <a href="#NewArrivals">  <button class="HeadButton"> New Arrivals </button> </a>  
+            <a href="#jumphere1">  <button class="HeadButton"> Popular Ones </button> </a>  
+            <a href="Order.html">  <button class="HeadButton"> My Orders </button> </a>  
+            <a href="Books.html" >  <button class="HeadButton"> ShowAll Books </button> </a>    
+           
+            <a href="Profile.html" >  <button class="HeadButton"> MyProfile </button> </a> 
+        </div>
+    </header>
+
+    <body>
+        <table border="2" style="margin-left: auto; margin-right: auto; margin-top: 200px;">
+            <tr>
+            <th> Book Name </th>
+            <th> Quantity </th>
+            <th> Price </th>
+            <th> Total  </th>
+
+            <tr>
+                <td>Principles of Programming</td>
+                <td><input type="number" value="2"></td>
+                <td>₹500</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>Dairy of Wimpy Kid</td>
+                <td><input type="number" value="1"></td>
+                <td>₹249</td>
+                <td>₹249</td>
+            </tr>
+            <tr>
+                <td>Basic of Physics</td>
+                <td><input type="number" value="3"></td>
+                <td>₹299</td>
+                <td>₹897</td>
+            </tr>
+            
+        </tr>
+        </table>
+        <div style="text-align: center; margin-top:40px;">
+            <p style="margin-right:280px;margin-bottom: 50px;font-size: 20px;">Have A Coupon?:<input type="text"><button type="button" style="margin-left: 10px;border-radius: 5px;"> Apply</button></p>
+            
+            <a href="home.html"><button style="width: 160px; height: 30px; margin-right: 150px;">Continue Shopping</button></a>
+            <a href="OrderFinal.html"><button style="width: 160px; height: 30px;"> Order Now</button></a>
+        </div>
+    </body>
+</html>
