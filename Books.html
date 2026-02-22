@@ -45,16 +45,20 @@
         display: flex;
         gap: 30px;
         margin-left: 200px;
+        flex-wrap: wrap;
     }
 
-    .book-card {
+    .book-card{
     width: 150px;
     border: 2px solid #c9a65a;
     padding: 10px;
-    text-align: center;
     border-radius: 3px;
     background-color: beige;
-    }
+
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+}
 
     .book-card img {
     width: 100%;
@@ -64,9 +68,16 @@
 
     .book-card button {
     margin-top: 10px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     cursor: pointer;
     }
+    .pref{
+        padding-left: 10px;
+        background-color: aliceblue;
+        border-color: #000000;
+        border-style: solid;
+    }
+   
 
 </style>
 </head>
@@ -83,12 +94,36 @@
             <a href="index.html" >  <button class="HeadButton"> Home </button> </a> 
             <a href="Order.html">  <button class="HeadButton"> My Orders </button> </a>   
             <a href="Books.html" >  <button class="HeadButton"> Book Catalog </button> </a>  
-            <a href="Cart.html" >  <button class="HeadButton"> Cart </button> </a>  
+            <a href="Cart.html" >  <button class="HeadButton"> My Cart </button> </a>  
             <a href="Profile.html" >  <button class="HeadButton"> My Profile </button> </a> 
         </div>
     </header>
+  
     <body style="background-color:#FFCE99;">
-
+      <div style="padding-top: 50px;float: left;position: relative;">
+         <div style="background-color: antiquewhite;width: 300px;float: left;border-style:ridge;border-width: 10px;border-color: #000000;">
+            <h3 style="text-align: center;">Preferences</h3>
+                <p class="pref">Categories</p>
+            <form>
+                <label><p><input type="checkbox">Sci-fi</p></label>
+                <label><p><input type="checkbox">Fiction</p></label>
+                <label><p><input type="checkbox">Non-Fiction</p></label>
+                <label><p><input type="checkbox">Fantasy</p></label>
+                <label><p><input type="checkbox">Romance</p></label>
+                
+                <p>Price Range: ₹100 <input type="range" max="1000" min="100" value="100"> ₹1000</p>
+                <p> High to Low<input type="radio" name="PriceRange"></p>
+                <p> Low to High<input type="radio" name="PriceRange"></p>
+                <p><button type="reset" > Clear Filter</button>  </p>
+                <p class="pref">language</p>
+                <label><p><input type="checkbox">English</p></label>
+                <label><p><input type="checkbox">Hindi</p></label>
+                <label><p><input type="checkbox">Telugu</p></label>
+                <label><p><input type="checkbox">Malayalam</p></label>
+                <label><p><input type="checkbox">Arabic</p></label>
+            </form>
+         </div>
+      </div>
     <div class="book-section">
 
         <div class="book-container">
@@ -97,7 +132,7 @@
                 <img src="StoryBook.jpg" alt="Book">
                 <h4>Harry Potter and the Sorcerer's stone</h4>
                 <p>₹299</p>
-                <button>Add to Cart</button>
+                <button class="but">Add to Cart</button>
             </div>
 
             <div class="book-card">
@@ -125,7 +160,7 @@
                 <img src="StoryBook5.jpg" alt="Book">
                 <h4>Dumb Way's to Die (Sketch Book)</h4>
                 <p>₹339</p>
-                <button>Add to Cart</button>
+                <button class="bookbutton">Add to Cart</button>
             </div>
 
              <div class="book-card">
