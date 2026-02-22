@@ -62,8 +62,8 @@
         <div style="text-align: center;">
            <a href="index.html" >  <button class="HeadButton"> Home </button> </a> 
             <a href="Order.html">  <button class="HeadButton"> My Orders </button> </a>  
-            <a href="Books.html" >  <button class="HeadButton"> BookCatalog </button> </a>    
-            <a href="Cart.html" >  <button class="HeadButton"> Cart </button> </a>  
+            <a href="Books.html" >  <button class="HeadButton"> Book Catalog </button> </a>    
+            <a href="Cart.html" >  <button class="HeadButton"> My Cart </button> </a>  
             <a href="Profile.html" >  <button class="HeadButton"> My Profile </button> </a> 
         </div>
     </header>
@@ -78,28 +78,27 @@
 
             <tr>
                 <td>Principles of Programming</td>
-                <td><input type="number" value="2"></td>
+                <td><input type="number" value="2" min="0" ></td>
                 <td>₹500</td>
                 <td>₹1000</td>
             </tr>
             <tr>
                 <td>Dairy of Wimpy Kid</td>
-                <td><input type="number" value="1"></td>
+                <td><input type="number" value="1" min="0"></td>
                 <td>₹249</td>
                 <td>₹249</td>
             </tr>
             <tr>
                 <td>Basic of Physics</td>
-                <td><input type="number" value="3"></td>
+                <td><input type="number" value="3" min="0"></td>
                 <td>₹299</td>
                 <td>₹897</td>
             </tr>
             
         </tr>
         </table>
-        <h2>Payment Method:</h2>
-    <div style="text-align: center; margin-top:40px;">
-            <h2>Please Select your prefered payment </h2>
+        <h2 style="margin-left: 620px;">Payment Method: Please Select your prefered payment</h2>
+    <div style=" margin-top:30px; margin-left: 750px">
             <p><input type="radio" id="onlinepay" name="Payment" >Gpay/OnlinePayment</p>
             <p><input type="radio" id="Cash" name="Payment">CashOnDelivery</p>
             <p>Address here:<input type="text" placeholder="street-101"></p>
@@ -107,8 +106,8 @@
             <h2>or</h2>
             <p><input type="radio" id="Card" name="Payment">Debit/Credit Card</p>
 
-            <form style="text-align: center;">
-            <div>
+            <form>
+            
             Card Holder Name = <input type="text" placeholder="Your Name">
             <br>
             Card Number = <input type="tel" placeholder="1234-1234-1234-1234" min="1" max="16">
@@ -116,11 +115,11 @@
             Expiry Date = <input type="month">
             <br>
             CVV = <input type="password" placeholder="000"  max="3">
-            </div>
-        </form>
+            
+            </form>
      </div>
-        <div style="text-align: center; margin-top:40px;">
-            <p style="margin-right:280px;margin-bottom: 50px;font-size: 20px;">Have A Coupon?:<input type="text"><button type="button" style="margin-left: 10px;border-radius: 5px;"> Apply</button></p>
+        <div style="margin-top:40px;margin-left: 700px;">
+            <p style="margin-right:280px;margin-bottom: 50px;font-size: 20px;margin-left: -145px;">Have A Coupon?:<input type="text" placeholder="0a1B2c" value="FirstVisit01"size="18"><button type="button" style="margin-left: 10px;border-radius: 5px;"> Apply</button></p>
             
             <a href="Index.html"><button style="width: 160px; height: 30px; margin-right: 150px;">Continue Shopping</button></a>
             <a href="OrderFinal.html"><button style="width: 160px; height: 30px;"> Order Now</button></a>
