@@ -1,136 +1,134 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
     <title>Online Book Store</title>
     
     <style>
-    
-    .Header{
-        background-color:rgb(255, 253, 232);
-    }
+        .HeadButton{
+            background-color: #faf875;
+            font-size: 15px;
+            font-family: Courier, monospace;
+            border-radius: 5px;
+            padding: 10px 29px;
+            cursor: pointer;
+        }
 
-    .Header1{
-        background-color:rgb(255, 253, 232);
-        border-color: antiquewhite ;
-        border-style: groove;   
-    }
+        a{
+            text-decoration: none;
+        }
+        
+        td{
+            text-align: center;
+            padding: 20px 0;
+        }
 
-   .HeadButton{
-        background-color: #faf875;
-        font-size: 15px;
-        font-family: Courier, monospace;
-        border-radius: 5px;
-        padding-left: 29px;
-        padding-right: 29px;
-    }
-
-    a{
-        text-decoration: none;
-    }
-    
-    td{
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    th{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 50px; 
-        padding-left: 50px;
-    }
-
+        th{
+            padding: 10px 50px;
+        }
     </style>
-    
-    </head>
+</head>
 
-    <header style="background-image:url(Backgroundimg.png); border: #cf802c8e; border-style:solid; border-radius: 5px;">
+<body style="background-color:#FFCE99; margin:0;">
+
+    <!-- HEADER (NOW INSIDE BODY) -->
+    <header style="background-image:url(Backgroundimg.png); border: #cf802c8e solid; border-radius: 5px;">
      
-        <a href="Login.html" style="float: right;border-color: #000000;border-style:solid;background-color: beige;">
-            <img src="AccIcon.png" style="width: 50;height: 50;">
+        <a href="Login.html" style="float: right; border:1px solid black; background-color: beige;">
+            <img src="AccIcon.png" style="width:50px; height:50px;">
         </a>
 
         <div style="text-align: center; font-size:45px; color: rgba(243, 126, 17, 0.89); padding-top: 20px;">
-            <p style="background-color:#000000be;"><b>Your Cart</b></p>
+            <p style="background-color:#000000be; margin:0;"><b>Your Cart</b></p>
         </div>
 
-        <hr style="border-color:black; border-width: 2px;">
+        <hr style="border:2px solid black;">
 
-        <div style="text-align: center;">
-           <a href="index.html"><button class="HeadButton">Home</button></a> 
-           <a href="Order.html"><button class="HeadButton">My Orders</button></a>  
-           <a href="Books.html"><button class="HeadButton">Book Catalog</button></a>    
-           <a href="Cart.html"><button class="HeadButton">My Cart</button></a>  
-           <a href="Profile.html"><button class="HeadButton">My Profile</button></a> 
+        <div style="text-align: center; padding-bottom:15px;">
+            <a href="index.html"><button class="HeadButton" type="button">Home</button></a> 
+            <a href="Order.html"><button class="HeadButton" type="button">My Orders</button></a>  
+            <a href="Books.html"><button class="HeadButton" type="button">Book Catalog</button></a>    
+            <a href="Cart.html"><button class="HeadButton" type="button">My Cart</button></a>  
+            <a href="Profile.html"><button class="HeadButton" type="button">My Profile</button></a> 
         </div>
     </header>
 
-    <body style="background-color:#FFCE99;">
 
-        <table border="2" style="margin-left: auto; margin-right: auto; margin-top: 80px; background-color: azure;">
-            <tr>
-                <th>Book Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
-            </tr>
+    <!-- CART TABLE -->
+    <table border="2" style="margin: 80px auto; background-color: azure;">
+        <tr>
+            <th>Book Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
 
-            <tr>
-                <td>Principles of Programming</td>
-                <td><input type="number" value="2" min="0"></td>
-                <td>₹500</td>
-                <td>₹1000</td>
-            </tr>
+        <tr>
+            <td>Principles of Programming</td>
+            <td><input type="number" value="2" min="0"></td>
+            <td>₹500</td>
+            <td>₹1000</td>
+        </tr>
 
-            <tr>
-                <td>Dairy of Wimpy Kid</td>
-                <td><input type="number" value="1" min="0"></td>
-                <td>₹249</td>
-                <td>₹249</td>
-            </tr>
+        <tr>
+            <td>Dairy of Wimpy Kid</td>
+            <td><input type="number" value="1" min="0"></td>
+            <td>₹249</td>
+            <td>₹249</td>
+        </tr>
 
-            <tr>
-                <td>Basic of Physics</td>
-                <td><input type="number" value="3" min="0"></td>
-                <td>₹299</td>
-                <td>₹897</td>
-            </tr>
-        </table>
+        <tr>
+            <td>Basic of Physics</td>
+            <td><input type="number" value="3" min="0"></td>
+            <td>₹299</td>
+            <td>₹897</td>
+        </tr>
+    </table>
 
-        <!-- Centered Payment Section -->
-        <div style="width: fit-content; margin: 60px auto; text-align: left;">
-            
-            <h2 style="text-align:center;">Select your preferred payment</h2>
+
+    <!-- PAYMENT SECTION -->
+    <div style="width: fit-content; margin: 60px auto; text-align: left;">
+        
+        <h2 style="text-align:center;">Select your preferred payment</h2>
+
+        <form>
 
             <p><input type="radio" name="Payment"> Gpay / Online Payment</p>
             <p><input type="radio" name="Payment"> Cash On Delivery</p>
             <p>Address here: <input type="text" placeholder="street-101"></p>
 
-            <h2 style="text-align:center;">or</h2>
+            <h3 style="text-align:center;">OR</h3>
 
             <p><input type="radio" name="Payment"> Debit / Credit Card</p>
 
-            <form>
-                Card Holder Name = <input type="text" placeholder="Your Name">
-                <br><br>
-                Card Number = <input type="tel" placeholder="1234-1234-1234-1234">
-                <br><br>
-                Expiry Date = <input type="month">
-                <br><br>
-                CVV = <input type="password" placeholder="000">
+            Card Holder Name = <input type="text" placeholder="Your Name">
+            <br><br>
+            Card Number = <input type="tel" placeholder="1234-1234-1234-1234">
+            <br><br>
+            Expiry Date = <input type="month">
+            <br><br>
+            CVV = <input type="password" placeholder="000">
 
-                <a href="index.html"> <button style="width: 160px; height: 30px; margin-right: 150px;">Continue Shopping</button> </a>
-        
-            <p style="margin-right:280px;margin-bottom: 50px;font-size: 20px;margin-left: -145px;">
-                Have A Coupon?:
+            <br><br>
+
+            <p>
+                Have A Coupon?
                 <input type="text" value="FirstVisit01" size="18">
-                <button type="button" style="margin-left: 10px;border-radius: 5px;">Apply</button>
+                <button type="button" style="border-radius:5px;">Apply</button>
             </p>
-            
-         <a href="index.html"> <button style="width: 160px; height: 30px; margin-right: 150px;">Continue Shopping</button> </a>
-          <a href="index.html"><button class="HeadButton">Home</button></a>  
-        </form>
-        </div>
 
-    </body>
+            <br>
+
+            <!-- Buttons OUTSIDE anchor-button nesting problem -->
+            <a href="index.html">
+                <button type="button" style="width:160px; height:30px;">Continue Shopping</button>
+            </a>
+
+            <a href="OrderFinal.html">
+                <button type="button" style="width:160px; height:30px;">Order Now</button>
+            </a>
+
+        </form>
+    </div>
+
+</body>
 </html>
