@@ -98,43 +98,72 @@
         </table>
 
         <!-- Centered Payment Section -->
-        <div style="width: fit-content; margin: 60px auto; text-align: left;">
-            
-            <h2 style="text-align:center;">Select your preferred payment</h2>
+        <!-- Centered Payment Section -->
+<div style="width: fit-content; margin: 60px auto; text-align: left;">
 
-            <p><input type="radio" name="Payment"> Gpay / Online Payment</p>
-            <p><input type="radio" name="Payment"> Cash On Delivery</p>
-            <p>Address here: <input type="text" placeholder="street-101"></p>
+    <form action="OrderFinal.html">
 
-            <h2 style="text-align:center;">or</h2>
+        <h2 style="text-align:center;">Select your preferred payment</h2>
 
-            <p><input type="radio" name="Payment"> Debit / Credit Card</p>
+        <p>
+            <input type="radio" name="Payment" required> Gpay / Online Payment
+        </p>
 
-            <form>
-                Card Holder Name = <input type="text" placeholder="Your Name">
-                <br><br>
-                Card Number = <input type="tel" placeholder="1234-1234-1234-1234">
-                <br><br>
-                Expiry Date = <input type="month">
-                <br><br>
-                CVV = <input type="password" placeholder="000">
-            </form>
-        <form>
-            <p style="margin-right:280px;margin-bottom: 50px;font-size: 20px;margin-left: -145px;">
-                Have A Coupon?:
-                <input type="text" value="FirstVisit01" size="18">
-                <button type="button" style="margin-left: 10px;border-radius: 5px;">Apply</button>
-            </p>
-            
-            <a href="Index.html">
-                <button style="width: 160px; height: 30px; margin-right: 150px;">Continue Shopping</button>
-            </a>
+        <p>
+            <input type="radio" name="Payment"> Cash On Delivery
+        </p>
 
-            <a href="OrderFinal.html">
-                <button style="width: 160px; height: 30px;">Order Now</button>
-            </a>
-        </form>
+        <p>
+            Address here:
+            <input type="text" placeholder="street-101" required>
+        </p>
+
+        <h2 style="text-align:center;">or</h2>
+
+        <p>
+            <input type="radio" name="Payment"> Debit / Credit Card
+        </p>
+
+        <p>
+            Card Holder Name =
+            <input type="text" placeholder="Your Name">
+        </p>
+
+        <p>
+            Card Number =
+            <input type="tel" placeholder="1234-1234-1234-1234">
+        </p>
+
+        <p>
+            Expiry Date =
+            <input type="month">
+        </p>
+
+        <p>
+            CVV =
+            <input type="password" placeholder="000">
+        </p>
+
+        <p style="margin-bottom: 30px; font-size: 20px;">
+            Have A Coupon?:
+            <input type="text" value="FirstVisit01" size="18">
+            <button type="button" style="margin-left: 10px;border-radius: 5px;">Apply</button>
+        </p>
+
+        <div style="text-align:center;">
+            <button type="button" style="width: 160px; height: 30px; margin-right: 20px;"
+                onclick="window.location.href='Index.html'">
+                Continue Shopping
+            </button>
+
+            <button type="submit" style="width: 160px; height: 30px;">
+                Order Now
+            </button>
         </div>
+
+    </form>
+
+</div>
 
     </body>
 </html>
